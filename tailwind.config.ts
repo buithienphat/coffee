@@ -14,26 +14,22 @@ const config: Config = {
         sm: "15px",
       },
     },
-
     screens: {
       sm: "640px",
       md: "768px",
       lg: "960px",
       xl: "1430px",
     },
-
     fontFamily: {
       primary: "var(--CU)",
       secondary: "var(--OS)",
     },
-
     extend: {
       backgroundImage: {
         hero_overlay: "url(/assets/hero/hero-overlay.png)",
         opening_hours: "url(/assets/opening-hours/bg.png)",
         footer: "url(/assets/footer/bg.png)",
       },
-
       colors: {
         primary: {
           DEFAULT: "#100e0e",
@@ -45,6 +41,9 @@ const config: Config = {
           DEFAULT: "#c7a17a",
           hover: "#a08161",
         },
+      },
+      transitionDuration: {
+        main: "300ms",
       },
     },
   },
