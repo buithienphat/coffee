@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
         <div
           data-scroll
           data-scroll-speed="0.4"
-          className="flex-1 flex flex-col text-center justify-center items-center pb-12 gap-10 h-full"
+          className="flex-1 flex flex-col text-center justify-center items-center sm:pb-12 pb-0 sm:gap-10 gap-5 h-full"
         >
           <div className="flex flex-col items-center">
             <Badge containerStyles="hidden xl:flex xl:w-[180px] xl:h-[180px]" />

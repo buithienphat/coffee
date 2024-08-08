@@ -15,7 +15,7 @@
     @apply text-primary font-primary;
   }
   .h1 {
-    @apply text-[70px] xl:text-[150px] leading-[1.1] font-semibold;
+    @apply text-[70px] xl:text-[150px] leading-[1.1] font-semibold whitespace-nowrap;
   }
   .h2 {
     @apply text-[56px] xl:text-[80px] leading-[1.2] font-bold;
@@ -24,6 +24,6 @@
     @apply text-lg;
   }
   .btn {
-    @apply min-w-[156px] h-[56px] px-6 bg-accent hover:bg-accent-hover text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all duration-main;
+    @apply min-w-[156px] h-[56px] px-6 bg-accent hover:bg-transparent hover:text-accent hover:border-accent hover:border-2 text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all duration-500;
   }
 }
