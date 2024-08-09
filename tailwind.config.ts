@@ -41,6 +41,10 @@ const config: Config = {
           DEFAULT: "#c7a17a",
           hover: "#a08161",
         },
+        white: {
+          DEFAULT: "#ffffff",
+          smoke: "#f5f5f5",
+        },
       },
       transitionDuration: {
         main: "300ms",

@@ -1,7 +1,12 @@
 "use client";
 
+import About from "@/components/About";
+import Explorer from "@/components/Explorer";
 import Hero from "@/components/Hero";
-import React, { useEffect } from "react";
+import Menu from "@/components/Menu";
+import OpeningHours from "@/components/OpeningHours";
+import Testimonials from "@/components/Testimonials";
+import { useEffect } from "react";
 
 type Props = {};
 
@@ -16,10 +21,14 @@ const Home = (props: Props) => {
   }, []);
 
   return (
-    <main>
+    <div className="h-full overflow-x-hidden">
       <Hero />
-      <div className="h-[4000px]"></div>
-    </main>
+      <Explorer />
+      <About />
+      <Menu />
+      <OpeningHours />
+      <Testimonials />
+    </div>
   );
 };
 
