@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Upright, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const cormorantUpright = Cormorant_Upright({
   weight: ["300", "400", "500", "600", "700"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${cormorantUpright.variable} ${openSans.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

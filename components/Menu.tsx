@@ -7,7 +7,7 @@ type Props = {};
 
 const Menu = (props: Props) => {
   return (
-    <section className="pt-12 pb-16 xl:pt-16 xl:pb-36 bg-red00">
+    <section className="pt-12 pb-16 xl:pt-16 xl:pb-36 bg-white-smoke">
       <div className="container">
         <div className="flex flex-col items-center justify-center mb-12 xl:mb-24 text-center">
           <h2 className="h2">Our Menu</h2>
@@ -30,7 +30,7 @@ const Menu = (props: Props) => {
               </div>
             ))}
           </div>
-          <button className="btn font-primary capitalize text-xl">
+          <button className="btn font-primary capitalize text-xl italic font-black">
             View Full Menu
           </button>
         </div>

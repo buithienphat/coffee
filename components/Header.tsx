@@ -11,9 +11,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   const [navActive, setNavActive] = useState(false);
-
-  const ref = useRef<HTMLElement | null>(null);
-  const [scrolling, setScrolling] = useState(false);
+  const [_, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

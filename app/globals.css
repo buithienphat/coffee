@@ -24,7 +24,7 @@
     @apply text-lg;
   }
   .btn {
-    @apply min-w-[156px] h-[56px] px-6 bg-accent hover:bg-transparent hover:text-accent hover:border-accent hover:border-2 text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all duration-500;
+    @apply min-w-[156px] h-[56px] px-6 bg-accent hover:bg-transparent hover:text-accent hover:border-accent border-[1px] border-transparent text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all duration-500;
   }
 }
 
