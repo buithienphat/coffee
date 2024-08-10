@@ -42,7 +42,7 @@ const Footer = (props: Props) => {
             ))}
           </nav>
 
-          <ul className="flex text-white text-xl gap-4">
+          <ul className="flex flex-col sm:flex-row text-white text-xl gap-4">
             <Link
               href={"/"}
               className="size-12 border border-white rounded-full flex items-center justify-center hover:text-accent hover:border-accent duration-main text-white"

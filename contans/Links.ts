@@ -15,4 +15,8 @@ export const links = [
     herf: "/",
     name: "Contacts",
   },
+  {
+    herf: "/",
+    name: "Explorer",
+  },
 ];
