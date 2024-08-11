@@ -5,7 +5,10 @@ type Props = {};
 
 const Explorer = (props: Props) => {
   return (
-    <section className="py-12 xl:py-0 xl:h-[90vh] xl:w-screen bg-white-smoke">
+    <section
+      className="py-12 xl:py-0 xl:h-[90vh] xl:w-screen bg-white-smoke"
+      id="explorer"
+    >
       <div className="container xl:w-full xl:h-full flex xl:justify-center xl:items-center">
         <div className="w-full flex flex-col lg:flex-row gap-12 xl:gap-20">
           <div className="flex-1 flex flex-col justify-around items-end text-center xl:text-left gap-12 xl:gap-0 max-w-[400px] mx-auto xl:max-w-none xl:mx-0">

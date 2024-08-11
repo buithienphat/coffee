@@ -4,19 +4,19 @@ export const links = [
     name: "Home",
   },
   {
-    herf: "/",
+    herf: "explorer",
+    name: "Explorer",
+  },
+  {
+    herf: "about",
     name: "About Us",
   },
   {
-    herf: "/",
+    herf: "menu",
     name: "Menu",
   },
   {
-    herf: "/",
+    herf: "contacts",
     name: "Contacts",
-  },
-  {
-    herf: "/",
-    name: "Explorer",
   },
 ];

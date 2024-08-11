@@ -1,3 +1,5 @@
+"use client";
+
 import { links } from "@/contans/Links";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +10,17 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 type Props = {};
 
 const Footer = (props: Props) => {
+  const scrollToSection = (e: any, targetId: string) => {
+    e.preventDefault();
+    const targetEle = document.getElementById(targetId);
+    if (targetEle) {
+      window.scrollTo({
+        top: targetEle.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer className="bg-footer bg-no-repeat bg-cover relative pt-16">
       <Overlay />
@@ -21,19 +34,13 @@ const Footer = (props: Props) => {
               className="object-contain"
             />
           </Link>
-          {/* <nav className="flex flex-col lg:flex-row items-center justify-center gap-8 xl:gap-12 ">
-            {links.map(({ herf, name }, idx) => (
-              <Link key={idx} href={herf}>
-                {name}
-              </Link>
-            ))}
-          </nav> */}
 
           <nav className="flex flex-col sm:flex-row items-center gap-5 text-white font-primary tracking-widest font-semibold text-[20px] italic">
             {links.map(({ herf, name }) => (
               <Link
                 key={name}
                 href={herf}
+                onClick={(e) => scrollToSection(e, herf)}
                 className="px-2 py-2 cursor-pointer relative group hover:text-accent duration-main"
               >
                 {name}

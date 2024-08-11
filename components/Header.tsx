@@ -13,18 +13,31 @@ const Header = (props: Props) => {
   const [navActive, setNavActive] = useState(false);
   const [_, setScrolling] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > 100) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     if (currentScrollY > 100) {
+  //       setScrolling(true);
+  //     } else {
+  //       setScrolling(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  const scrollToSection = (e: any, targetId: string) => {
+    e.preventDefault();
+
+    const targetEle = document.getElementById(targetId);
+    if (targetEle) {
+      const offsetTop = targetEle.offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <header className="absolute top-5 z-50 left-0 right-0">
@@ -47,6 +60,7 @@ const Header = (props: Props) => {
                 key={name}
                 href={herf}
                 className="px-2 py-2 cursor-pointer relative group hover:text-accent duration-main"
+                onClick={(e) => scrollToSection(e, herf)}
               >
                 {name}
                 <span className="block absolute bottom-1 left-0 w-0 h-[2px] bg-accent-hover transition-all duration-500 group-hover:w-full"></span>

@@ -40,7 +40,7 @@ const About = (props: Props) => {
   }, []);
 
   return (
-    <section className="overflow-hidden bg-primary">
+    <section className="overflow-hidden bg-primary" id="about">
       <div ref={scrollTriggerRef}>
         <div
           ref={scrollableSectionRef}

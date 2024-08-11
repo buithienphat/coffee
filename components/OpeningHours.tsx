@@ -7,7 +7,10 @@ type Props = {};
 
 const OpeningHours = (props: Props) => {
   return (
-    <section className="flex flex-col sm:flex-row bg-primary h-full sm:h-[80vh] xl:h-[70vh] relative bg-opening_hours bg-fixed bg-center bg-no-repeat bg-cover">
+    <section
+      id="contacts"
+      className="flex flex-col sm:flex-row bg-primary h-full sm:h-[80vh] xl:h-[70vh] relative bg-opening_hours bg-fixed bg-center bg-no-repeat bg-cover"
+    >
       <div className="flex-1 flex justify-center items-center relative py-16 sm:py-0">
         <div className="absolute inset-0 bg-white/10 z-20"></div>
         <Badge containerStyles="size-[320px] z-40" />
