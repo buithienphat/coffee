@@ -6,6 +6,8 @@ import MenuItem from "./MenuItem";
 type Props = {};
 
 const Menu = (props: Props) => {
+  const handlePopupModal = () => {};
+
   return (
     <section className="pt-12 pb-16 xl:pt-16 xl:pb-36 bg-white-smoke" id="menu">
       <div className="container">
@@ -30,7 +32,10 @@ const Menu = (props: Props) => {
               </div>
             ))}
           </div>
-          <button className="btn font-primary capitalize text-xl italic font-black">
+          <button
+            className="btn font-primary capitalize text-xl italic font-black"
+            onClick={handlePopupModal}
+          >
             View Full Menu
           </button>
         </div>
