@@ -10,8 +10,8 @@ const Explorer = (props: Props) => {
       id="explorer"
     >
       <div className="container xl:w-full xl:h-full flex xl:justify-center xl:items-center">
-        <div className="w-full flex flex-col lg:flex-row gap-12 xl:gap-20">
-          <div className="flex-1 flex flex-col justify-around items-end text-center xl:text-left gap-12 xl:gap-0 max-w-[400px] mx-auto xl:max-w-none xl:mx-0">
+        <div className="w-full flex flex-col lg:flex-row gap-12 xl:gap-20 justify-center">
+          {/* <div className="flex-1 flex flex-col justify-around items-end text-center xl:text-left gap-12 xl:gap-0 max-w-[400px] mx-auto xl:max-w-none xl:mx-0">
             <div className="relative flex items-start">
               <div className="xl:max-w-[420px] xl:text-right xl:flex xl:flex-col xl:items-end">
                 <div className="mb-6 flex justify-center items-center">
@@ -54,7 +54,7 @@ const Explorer = (props: Props) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="hidden xl:flex justify-center">
             <div className="relative w-[322px] h-[580px]">
               <Image
@@ -69,7 +69,7 @@ const Explorer = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex-1 flex flex-col justify-around items-start text-center xl:text-left gap-12 xl:gap-0 max-w-[400px] mx-auto xl:max-w-none xl:mx-0">
+          <div className="flex flex-col justify-around items-start text-center xl:text-left gap-12 xl:gap-0 max-w-[400px] mx-auto xl:max-w-none xl:mx-0">
             <div className="relative flex items-start">
               <div className="xl:max-w-[420px] xl:text-left xl:flex xl:flex-col xl:items-start">
                 <div className="mb-6 flex justify-center items-center">

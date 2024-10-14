@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Separator from "./Separator";
 import { dataMenu } from "@/contans/dataMenu";
 import MenuItem from "./MenuItem";
+import { createPortal } from "react-dom";
+import ModalMenu from "./ModalMenu";
 
 type Props = {};
 
 const Menu = (props: Props) => {
-  const handlePopupModal = () => {};
+  const [popupMenu, setppopupMenu] = useState(false);
+  const onOpen = () => {
+    setppopupMenu(true);
+  };
+  const onClose = () => {
+    setppopupMenu(false);
+  };
 
   return (
     <section className="pt-12 pb-16 xl:pt-16 xl:pb-36 bg-white-smoke" id="menu">
@@ -34,12 +42,14 @@ const Menu = (props: Props) => {
           </div>
           <button
             className="btn font-primary capitalize text-xl italic font-black"
-            onClick={handlePopupModal}
+            onClick={onOpen}
           >
             View Full Menu
           </button>
         </div>
       </div>
+
+      <ModalMenu onClose={onClose} popupMenu={popupMenu} />
     </section>
   );
 };
